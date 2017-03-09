@@ -13,7 +13,7 @@ namespace vio1
         int size;
         Point[] points;
 
-        public int Length { get { return size; } } //свойство - инкапсуляция
+        public int Length { get { return size; } } 
 
         public Game(params int[] val)
         {
@@ -48,7 +48,7 @@ namespace vio1
             {
                 for (int j = 0; j < size; j++)
                 {
-                    int value = val[i * size + j]; //???
+                    int value = val[i * size + j]; 
                     field[i, j] = value;
                     points[value] = new Point(j, i);
                 }
